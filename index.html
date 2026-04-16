@@ -503,14 +503,14 @@ const SCHOOLS_ORIG = {
     },
     serie:null,
     nivel:{labels:['Ens. Fundamental','Educação Infantil','Ensino Médio'],values:[1028,513,105]},
-    mes:{labels:MES,values:[10,104,235,219,222,425,151,38]},
+    mes:{labels:MES,values:[12,118,267,256,281,493,174,43]},
     canalMes:[
-{label:'Instagram',    data:[2,17,42,42,49,102,33,8],  color:'#1a4599'},
-{label:'Ind. Amigos',  data:[2,23,52,48,49,94,33,8],   color:'#2563eb'},
-{label:'Parceria',     data:[2,23,47,39,44,76,27,7],   color:'#60a5fa'},
-{label:'Outros',       data:[4,41,94,90,80,153,58,15], color:'#dbeafe'}
+{label:'Instagram',    data:[2,17,45,48,52,108,36,8],  color:'#1a4599'},
+{label:'Ind. Amigos',  data:[2,26,58,52,57,112,38,9],  color:'#2563eb'},
+{label:'Parceria',     data:[4,25,48,42,51,83,28,7],   color:'#60a5fa'},
+{label:'Outros',       data:[4,50,116,114,121,190,72,19],color:'#dbeafe'}
     ],
-    kpi:{pico:{mes:'Jan/2026',valor:425},trimestre:{label:'Nov/25+Dez+Jan/26',valor:866,pct:'62,4'},media:175},
+    kpi:{pico:{mes:'Jan/2026',valor:493},trimestre:{label:'Nov/25+Dez+Jan/26',valor:1030,pct:'62,6'},media:206},
     hlCanal:{top:[['Instagram',344],['Ind. de Amigos',337],['Parceria',261]],
       desc:'<strong>Instagram, Indicação de Amigos e Parceria</strong> concentraram 57% de todas as matrículas da rede (942 alunos). A força do boca a boca e do canal digital confirmam-se como pilares estratégicos em todas as unidades.'},
     kpiDesc:{comDesc:1585,comDescPct:'96,3',bolsa100:254,bolsa100Pct:'15,4',faixaFreq:'16–20%',faixaCount:566,faixaPct:'34,4',semDesc:61,semDescPct:'3,7'}
@@ -547,9 +547,9 @@ const SCHOOLS_ORIG = {
   },
 
   'asa-sul': {
-    name:'Asa Sul', total:240, hasDate:false,
+    name:'Asa Sul', total:240, hasDate:true,
     canal:{
-      labels:['Indicação de Amigos','Rede Adventista','Parceria','Instagram','Igreja','Múltiplos Canais','Filho de Obreiro','Outdoor','Google','Ex-Aluno(a)','Tradição Familiar','Família','Obreiro','Aluno da Rede','Funcionário','Irmão já estudava','Vizinho','Bos Door','Processo de Bolsa','Site/Própria Escola','Filho de Funcionário','Pai de Aluno','Uniforme','Transf. (Rede)'],
+      labels:['Indicação de Amigos','Rede Adventista','Parceria','Instagram','Igreja','Múltiplos Canais','Filho de Obreiro','Outdoor','Google','Ex-Aluno(a)','Tradição Familiar','Família','Obreiro','Aluno da Rede','Funcionário','Irmão já estudava','Vizinho','Bus Door','Processo de Bolsa','Site/Própria Escola','Filho de Funcionário','Pai de Aluno','Uniforme','Transf. (Rede)'],
       values:[45,29,23,21,18,11,10,8,8,8,8,7,7,6,5,5,4,3,4,4,3,1,1,1]
     },
     canalMultiplosDetail:[
@@ -571,8 +571,15 @@ const SCHOOLS_ORIG = {
       values:[30,27,24,20,19,18,17,15,13,13,12,10,8,7,7]
     },
     nivel:{labels:['Ens. Fundamental','Educação Infantil','Ensino Médio'],values:[132,69,39]},
-    mes:null, canalMes:null,
-    kpi:{pico:null,trimestre:null,media:null},
+    mes:{labels:MES,values:[2,14,32,37,59,68,23,5]},
+    canalMes:[
+      {label:'Ind. Amigos',    data:[0,3,6,4,8,18,5,1],  color:'#1a4599'},
+      {label:'Rede Adventista',data:[0,0,4,1,8,8,7,1],   color:'#2563eb'},
+      {label:'Parceria',       data:[2,2,1,3,7,7,1,0],   color:'#60a5fa'},
+      {label:'Instagram',      data:[0,0,3,6,3,6,3,0],   color:'#93c5fd'},
+      {label:'Outros',         data:[0,9,18,23,33,29,7,3],color:'#dbeafe'}
+    ],
+    kpi:{pico:{mes:'Jan/2026',valor:68},trimestre:{label:'Nov/25+Dez+Jan/26',valor:164,pct:'68,3'},media:30},
     hlCanal:{top:[['Ind. de Amigos',45],['Rede Adventista',29],['Parceria',23]],
       desc:'<strong>Indicação de amigos, Rede Adventista e parcerias</strong> lideraram com 97 matrículas. A forte presença de indicações pessoais e da identidade adventista reflete o perfil consolidado da escola. Os 11 alunos classificados em <em>Múltiplos Canais</em> combinaram principalmente Amigo + Instagram (3), Outdoor + Instagram (2) e Facebook + Instagram (2).'},
     kpiDesc:{comDesc:234,comDescPct:'97,5',bolsa100:44,bolsa100Pct:'18,3',faixaFreq:'16–20%',faixaCount:61,faixaPct:'25,4',semDesc:6,semDescPct:'2,5'}
@@ -786,7 +793,7 @@ const SCHOOLS_ORIG = {
   'sobradinho': {
     name:'Sobradinho', total:249, hasDate:true,
     canal:{
-      labels:['Instagram','Indicação de Amigos','Parceria','Família','Outdoor','Indicação de Pais','Transf./Ex-aluno','Aluno Adventista','Google','Bos Door','Panfleto/Cartaz','TV','Outros/N.I.'],
+      labels:['Instagram','Indicação de Amigos','Parceria','Família','Outdoor','Indicação de Pais','Transf./Ex-aluno','Aluno Adventista','Google','Bus Door','Panfleto/Cartaz','TV','Outros/N.I.'],
       values:[58,51,46,27,26,9,8,5,5,4,4,2,4]
     },
     motivo:{
@@ -1155,13 +1162,10 @@ function loadSchool(id){
     const evolDiv=document.getElementById('evolucaoContent');
     const kpi=sc.kpi;
     evolDiv.innerHTML=`
-      <div style="font-size:12px;color:var(--gray-400);margin-bottom:12px;padding:10px 14px;background:var(--blue-ghost);border-radius:8px;border-left:3px solid var(--blue-pale)">
-        ⚠ <strong style="color:var(--blue-mid)">Asa Sul não possui dado de data de matrícula</strong> — os 240 alunos da unidade estão incluídos nos totais, mas não no gráfico temporal. Os meses mostrados correspondem às demais 8 unidades (1.406 alunos).
-      </div>
       <div class="kpi-row">
         ${kpiCard('Pico da Rede',kpi.pico.valor,kpi.pico.mes+' · maior mês em toda a rede','accent','🔥')}
         ${kpiCard('Trimestre principal',kpi.trimestre.valor,kpi.trimestre.label+' · '+kpi.trimestre.pct+'%','green','📈')}
-        ${kpiCard('Média mensal',kpi.media,'matrículas/mês · 8 unidades com data','','')}
+        ${kpiCard('Média mensal',kpi.media,'matrículas/mês · 9 unidades com data','','')}
         ${kpiCard('Meses de campanha',8,'Agosto/2025 a Março/2026','','🗓️')}
       </div>
       <div class="chart-card" style="margin-bottom:16px">
